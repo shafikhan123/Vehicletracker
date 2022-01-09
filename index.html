@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
         font-family: sans-serif;
@@ -14,21 +15,33 @@
     margin: auto;
     padding: 0 30px;
       }
+      label{
+        font-size: 20px;
+    font-weight: bold;
+      }
+      input{
+        height: 30px;
+      }
+
+      h2 {
+        text-align: center;
+    color: blue;
+      }
     </style>
   </head>
 <body>
 
-<h2>Vehicle Records</h2>
+<h2>Vehicle Tracker</h2>
 
 <section id="myForm">
   <label for="fdata">Date</label><br>
-  <input type="date" id="fdata" name="fdata" required><br>
+  <input type="date" id="fdata" name="fdata" required><br><br>
 
   <label for="fvehiclenumber">Vehicle number:</label><br>
-  <input type="text" id="fvehiclenumber" name="fvehiclenumber" required><br>
+  <input type="text" id="fvehiclenumber" name="fvehiclenumber" required><br><br>
 
   <label for="fmaterial">Vehicle material:</label><br>
-  <textarea id="fmaterial" name="fmaterial" rows="4" cols="50" required>
+  <textarea id="fmaterial" name="fmaterial" rows="4" cols="30" required>
      </textarea><br>
   <br>
   <input value="Submit" type="submit" onclick="submitform()">
